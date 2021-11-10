@@ -1,0 +1,8 @@
+vhdl xil_defaultlib  \
+"../../../bd/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/c_shift_ram_0/sim/c_shift_ram_0.vhd" \
+"../../../bd/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/dsp48_multiplier/sim/dsp48_multiplier.vhd" \
+"../../../bd/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/dsp48_multiplier_1/sim/dsp48_multiplier_1.vhd" \
+"../../../bd/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/c_shift_ram_1/sim/c_shift_ram_1.vhd" \
+"../../../bd/linear_regression_top/ip/linear_regression_top_data_path_0_0/src/dsp48_multiplier_2/sim/dsp48_multiplier_2.vhd" \
+
+nosort

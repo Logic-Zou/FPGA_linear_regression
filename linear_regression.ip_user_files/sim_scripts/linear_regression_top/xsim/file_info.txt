@@ -1,0 +1,12 @@
+c_shift_ram_0.vhd,vhdl,xil_defaultlib,../../../bd/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/c_shift_ram_0/sim/c_shift_ram_0.vhd,
+dsp48_multiplier.vhd,vhdl,xil_defaultlib,../../../bd/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/dsp48_multiplier/sim/dsp48_multiplier.vhd,
+dsp48_multiplier_1.vhd,vhdl,xil_defaultlib,../../../bd/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/dsp48_multiplier_1/sim/dsp48_multiplier_1.vhd,
+c_shift_ram_1.vhd,vhdl,xil_defaultlib,../../../bd/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/c_shift_ram_1/sim/c_shift_ram_1.vhd,
+data_proc.v,verilog,xil_defaultlib,../../../bd/linear_regression_top/ipshared/8ee5/src/data_proc.v,
+linear_regression_top_data_proc_0_0.v,verilog,xil_defaultlib,../../../bd/linear_regression_top/ip/linear_regression_top_data_proc_0_0/sim/linear_regression_top_data_proc_0_0.v,
+dsp48_multiplier_2.vhd,vhdl,xil_defaultlib,../../../bd/linear_regression_top/ip/linear_regression_top_data_path_0_0/src/dsp48_multiplier_2/sim/dsp48_multiplier_2.vhd,
+data_path.v,verilog,xil_defaultlib,../../../bd/linear_regression_top/ipshared/3185/src/data_path.v,
+linear_regression_top_data_path_0_0.v,verilog,xil_defaultlib,../../../bd/linear_regression_top/ip/linear_regression_top_data_path_0_0/sim/linear_regression_top_data_path_0_0.v,
+linear_regression_top_iteration_ctrl_0_0.v,verilog,xil_defaultlib,../../../bd/linear_regression_top/ip/linear_regression_top_iteration_ctrl_0_0/sim/linear_regression_top_iteration_ctrl_0_0.v,
+linear_regression_top.v,verilog,xil_defaultlib,../../../bd/linear_regression_top/sim/linear_regression_top.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

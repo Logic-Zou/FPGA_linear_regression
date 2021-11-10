@@ -1,0 +1,545 @@
+
+*** Running vivado
+    with args -log linear_regression_top_data_proc_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source linear_regression_top_data_proc_0_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source linear_regression_top_data_proc_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/linear_regression.ip_user_files/IP_data_proc'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/linear_regression.ip_user_files/IP_datapath'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/linear_regression.ip_user_files/IP_iteration_ctrl'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/vivado/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/linear_regression.cache/ip 
+Command: synth_design -top linear_regression_top_data_proc_0_0 -part xc7vx415tffg1157-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx415t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx415t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14600 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 469.668 ; gain = 100.258
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'linear_regression_top_data_proc_0_0' [e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/src/linear_regression_top/ip/linear_regression_top_data_proc_0_0/synth/linear_regression_top_data_proc_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'data_proc' [e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/src/linear_regression_top/ipshared/8ee5/src/data_proc.v:23]
+	Parameter size bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dsp48_multiplier' [e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/src/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/dsp48_multiplier/synth/dsp48_multiplier.vhd:68]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_INDEP_CE bound to: 0 - type: integer 
+	Parameter C_HAS_CED bound to: 0 - type: integer 
+	Parameter C_HAS_CEA bound to: 0 - type: integer 
+	Parameter C_HAS_CEB bound to: 0 - type: integer 
+	Parameter C_HAS_CEC bound to: 0 - type: integer 
+	Parameter C_HAS_CECONCAT bound to: 0 - type: integer 
+	Parameter C_HAS_CEM bound to: 0 - type: integer 
+	Parameter C_HAS_CEP bound to: 0 - type: integer 
+	Parameter C_HAS_CESEL bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_INDEP_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRD bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRA bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRB bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRC bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRM bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRP bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRCONCAT bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRSEL bound to: 0 - type: integer 
+	Parameter C_HAS_CARRYCASCIN bound to: 0 - type: integer 
+	Parameter C_HAS_CARRYIN bound to: 0 - type: integer 
+	Parameter C_HAS_ACIN bound to: 0 - type: integer 
+	Parameter C_HAS_BCIN bound to: 0 - type: integer 
+	Parameter C_HAS_PCIN bound to: 0 - type: integer 
+	Parameter C_HAS_A bound to: 1 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_CONCAT bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 16 - type: integer 
+	Parameter C_B_WIDTH bound to: 16 - type: integer 
+	Parameter C_C_WIDTH bound to: 48 - type: integer 
+	Parameter C_D_WIDTH bound to: 18 - type: integer 
+	Parameter C_CONCAT_WIDTH bound to: 48 - type: integer 
+	Parameter C_P_MSB bound to: 31 - type: integer 
+	Parameter C_P_LSB bound to: 0 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 0 - type: integer 
+	Parameter C_HAS_ACOUT bound to: 0 - type: integer 
+	Parameter C_HAS_BCOUT bound to: 0 - type: integer 
+	Parameter C_HAS_CARRYCASCOUT bound to: 0 - type: integer 
+	Parameter C_HAS_CARRYOUT bound to: 0 - type: integer 
+	Parameter C_HAS_PCOUT bound to: 0 - type: integer 
+	Parameter C_CONSTANT_1 bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: -1 - type: integer 
+	Parameter C_OPMODES bound to: 000100100000010100000000 - type: string 
+	Parameter C_REG_CONFIG bound to: 00000000000011000011000001000100 - type: string 
+	Parameter C_TEST_CORE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xbip_dsp48_macro_v3_0_16' declared at 'e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/src/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/dsp48_multiplier/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd:5013' bound to instance 'U0' of component 'xbip_dsp48_macro_v3_0_16' [e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/src/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/dsp48_multiplier/synth/dsp48_multiplier.vhd:207]
+INFO: [Synth 8-256] done synthesizing module 'dsp48_multiplier' (6#1) [e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/src/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/dsp48_multiplier/synth/dsp48_multiplier.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'c_shift_ram_0' [e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/src/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/c_shift_ram_0/synth/c_shift_ram_0.vhd:67]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_WIDTH bound to: 1 - type: integer 
+	Parameter C_DEPTH bound to: 4 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_SHIFT_TYPE bound to: 0 - type: integer 
+	Parameter C_OPT_GOAL bound to: 0 - type: integer 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_A bound to: 0 - type: integer 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_REG_LAST_BIT bound to: 1 - type: integer 
+	Parameter C_SYNC_PRIORITY bound to: 1 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: no_coe_file_loaded - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_READ_MIF bound to: 0 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_shift_ram_v12_0_12' declared at 'e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/src/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/c_shift_ram_0/hdl/c_shift_ram_v12_0_vh_rfs.vhd:2590' bound to instance 'U0' of component 'c_shift_ram_v12_0_12' [e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/src/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/c_shift_ram_0/synth/c_shift_ram_0.vhd:122]
+INFO: [Synth 8-256] done synthesizing module 'c_shift_ram_0' (10#1) [e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/src/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/c_shift_ram_0/synth/c_shift_ram_0.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'dsp48_multiplier_1' [e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/src/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/dsp48_multiplier_1/synth/dsp48_multiplier_1.vhd:68]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_INDEP_CE bound to: 0 - type: integer 
+	Parameter C_HAS_CED bound to: 0 - type: integer 
+	Parameter C_HAS_CEA bound to: 0 - type: integer 
+	Parameter C_HAS_CEB bound to: 0 - type: integer 
+	Parameter C_HAS_CEC bound to: 0 - type: integer 
+	Parameter C_HAS_CECONCAT bound to: 0 - type: integer 
+	Parameter C_HAS_CEM bound to: 0 - type: integer 
+	Parameter C_HAS_CEP bound to: 0 - type: integer 
+	Parameter C_HAS_CESEL bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_INDEP_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRD bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRA bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRB bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRC bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRM bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRP bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRCONCAT bound to: 0 - type: integer 
+	Parameter C_HAS_SCLRSEL bound to: 0 - type: integer 
+	Parameter C_HAS_CARRYCASCIN bound to: 0 - type: integer 
+	Parameter C_HAS_CARRYIN bound to: 0 - type: integer 
+	Parameter C_HAS_ACIN bound to: 0 - type: integer 
+	Parameter C_HAS_BCIN bound to: 0 - type: integer 
+	Parameter C_HAS_PCIN bound to: 0 - type: integer 
+	Parameter C_HAS_A bound to: 1 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_CONCAT bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 16 - type: integer 
+	Parameter C_B_WIDTH bound to: 8 - type: integer 
+	Parameter C_C_WIDTH bound to: 48 - type: integer 
+	Parameter C_D_WIDTH bound to: 18 - type: integer 
+	Parameter C_CONCAT_WIDTH bound to: 48 - type: integer 
+	Parameter C_P_MSB bound to: 23 - type: integer 
+	Parameter C_P_LSB bound to: 0 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 0 - type: integer 
+	Parameter C_HAS_ACOUT bound to: 0 - type: integer 
+	Parameter C_HAS_BCOUT bound to: 0 - type: integer 
+	Parameter C_HAS_CARRYCASCOUT bound to: 0 - type: integer 
+	Parameter C_HAS_CARRYOUT bound to: 0 - type: integer 
+	Parameter C_HAS_PCOUT bound to: 0 - type: integer 
+	Parameter C_CONSTANT_1 bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: -1 - type: integer 
+	Parameter C_OPMODES bound to: 000100100000010100000000 - type: string 
+	Parameter C_REG_CONFIG bound to: 00000000000011000011000001000100 - type: string 
+	Parameter C_TEST_CORE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xbip_dsp48_macro_v3_0_16' declared at 'e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/src/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/dsp48_multiplier/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd:5013' bound to instance 'U0' of component 'xbip_dsp48_macro_v3_0_16' [e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/src/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/dsp48_multiplier_1/synth/dsp48_multiplier_1.vhd:207]
+INFO: [Synth 8-256] done synthesizing module 'dsp48_multiplier_1' (11#1) [e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/src/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/dsp48_multiplier_1/synth/dsp48_multiplier_1.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'c_shift_ram_1' [e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/src/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/c_shift_ram_1/synth/c_shift_ram_1.vhd:67]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_WIDTH bound to: 1 - type: integer 
+	Parameter C_DEPTH bound to: 14 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_SHIFT_TYPE bound to: 0 - type: integer 
+	Parameter C_OPT_GOAL bound to: 0 - type: integer 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_A bound to: 0 - type: integer 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_REG_LAST_BIT bound to: 1 - type: integer 
+	Parameter C_SYNC_PRIORITY bound to: 1 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: no_coe_file_loaded - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_READ_MIF bound to: 0 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_shift_ram_v12_0_12' declared at 'e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/src/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/c_shift_ram_0/hdl/c_shift_ram_v12_0_vh_rfs.vhd:2590' bound to instance 'U0' of component 'c_shift_ram_v12_0_12' [e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/src/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/c_shift_ram_1/synth/c_shift_ram_1.vhd:122]
+INFO: [Synth 8-256] done synthesizing module 'c_shift_ram_1' (12#1) [e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/src/linear_regression_top/ip/linear_regression_top_data_proc_0_0/src/c_shift_ram_1/synth/c_shift_ram_1.vhd:67]
+INFO: [Synth 8-6155] done synthesizing module 'data_proc' (13#1) [e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/src/linear_regression_top/ipshared/8ee5/src/data_proc.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'linear_regression_top_data_proc_0_0' (14#1) [e:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/src/linear_regression_top/ip/linear_regression_top_data_proc_0_0/synth/linear_regression_top_data_proc_0_0.v:58]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port a[3]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port a[2]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port a[1]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port a[0]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port ce
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port aclr
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port aset
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port ainit
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port sset
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized0 has unconnected port sinit
+WARNING: [Synth 8-3331] design xbip_dsp48e1_wrapper_v3_0 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_dsp48e1_wrapper_v3_0 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_dsp48e1_wrapper_v3_0 has unconnected port CEAD
+WARNING: [Synth 8-3331] design xbip_dsp48e1_wrapper_v3_0 has unconnected port CED
+WARNING: [Synth 8-3331] design xbip_dsp48e1_wrapper_v3_0 has unconnected port SCLRD
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized6 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized6 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized6 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized6 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized6 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized5 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized4 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized4 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized4 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized4 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized4 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized2 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized2 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized2 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized2 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized2 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized1 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized1 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized1 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized1 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized0 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized0 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized0 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized0 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized0 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port SEL[0]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[47]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[46]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[45]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[44]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[43]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[42]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[41]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[40]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[39]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[38]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[37]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[36]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[35]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[34]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[33]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[32]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[31]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[30]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[29]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[28]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[27]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[26]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[25]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[24]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[23]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[22]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[21]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[20]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[19]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[18]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[17]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[16]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[15]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[14]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[13]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[12]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[11]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[10]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[9]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[8]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[7]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[6]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[5]
+WARNING: [Synth 8-3331] design xbip_dsp48_macro_synth__parameterized0 has unconnected port C[4]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 586.984 ; gain = 217.574
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 586.984 ; gain = 217.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 586.984 ; gain = 217.574
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7vx415tffg1157-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/linear_regression.runs/linear_regression_top_data_proc_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/linear_regression.runs/linear_regression_top_data_proc_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 983.445 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 983.445 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 983.961 ; gain = 0.516
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 983.961 ; gain = 614.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx415tffg1157-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 983.961 ; gain = 614.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/shift_ram_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/multiplier_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/multiplier_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/multiplier_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/divider_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/divider_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/divider_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/divider_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/divider_4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/shift_ram_1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 983.961 ; gain = 614.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 983.961 ; gain = 614.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2160 (col length:120)
+BRAMs: 1760 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 983.961 ; gain = 614.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1043.645 ; gain = 674.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1044.164 ; gain = 674.754
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst/cnt1_reg[3]' (FDC) to 'inst/cnt_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/cnt_reg[3] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1055.008 ; gain = 685.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1055.008 ; gain = 685.598
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1055.008 ; gain = 685.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1055.008 ; gain = 685.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1055.008 ; gain = 685.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1055.008 ; gain = 685.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1055.008 ; gain = 685.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    43|
+|2     |DSP48E1 |     8|
+|3     |LUT1    |     1|
+|4     |LUT2    |    41|
+|5     |LUT3    |    88|
+|6     |LUT4    |    93|
+|7     |LUT5    |    92|
+|8     |SRL16E  |     2|
+|9     |FDCE    |   132|
+|10    |FDRE    |   786|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1055.008 ; gain = 685.598
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 336 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 1055.008 ; gain = 288.621
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1055.008 ; gain = 685.598
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1067.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1067.625 ; gain = 709.734
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1067.625 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/linear_regression.runs/linear_regression_top_data_proc_0_0_synth_1/linear_regression_top_data_proc_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP linear_regression_top_data_proc_0_0, cache-ID = 855380cb6d60f084
+INFO: [Coretcl 2-1174] Renamed 89 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1067.625 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/XILINX/Projects/ML_linear_regression/linear_regression_new/linear_regression/linear_regression.runs/linear_regression_top_data_proc_0_0_synth_1/linear_regression_top_data_proc_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file linear_regression_top_data_proc_0_0_utilization_synth.rpt -pb linear_regression_top_data_proc_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 10 16:45:23 2021...

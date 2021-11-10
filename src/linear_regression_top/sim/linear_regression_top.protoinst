@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"linear_regression_top": {
+			"proto_instances": {
+			}
+		}
+	}
+}

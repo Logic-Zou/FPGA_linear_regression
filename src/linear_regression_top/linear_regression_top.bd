@@ -1,0 +1,245 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE7B3DCFFF6BB797B",
+      "device": "xc7vx415tffg1157-1",
+      "name": "linear_regression_top",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "data_proc_0": "",
+      "data_path_0": "",
+      "iteration_ctrl_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "linear_regression_top_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst_n": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "alpha_temp_0": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "input_valid_0": {
+        "direction": "I"
+      },
+      "conv_flag_out": {
+        "direction": "O"
+      },
+      "theta_0_out": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "theta_1_out": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      }
+    },
+    "components": {
+      "data_proc_0": {
+        "vlnv": "xilinx.com:user:data_proc:1.0",
+        "xci_name": "linear_regression_top_data_proc_0_0"
+      },
+      "data_path_0": {
+        "vlnv": "xilinx.com:user:data_path:1.0",
+        "xci_name": "linear_regression_top_data_path_0_0"
+      },
+      "iteration_ctrl_0": {
+        "vlnv": "xilinx.com:module_ref:iteration_ctrl:1.0",
+        "xci_name": "linear_regression_top_iteration_ctrl_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "iteration_ctrl",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "linear_regression_top_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst_n": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "input_valid": {
+            "direction": "I"
+          },
+          "conv_flag_in": {
+            "direction": "I"
+          },
+          "avg_valid_in": {
+            "direction": "I"
+          },
+          "xy_valid_out": {
+            "direction": "O"
+          },
+          "en_theta": {
+            "direction": "O"
+          },
+          "sel_theta": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "output_valid": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "data_proc_0/clk",
+          "data_path_0/clk",
+          "iteration_ctrl_0/clk"
+        ]
+      },
+      "rst_n_0_1": {
+        "ports": [
+          "rst_n",
+          "data_proc_0/rst_n",
+          "data_path_0/rst_n",
+          "iteration_ctrl_0/rst_n"
+        ]
+      },
+      "iteration_ctrl_0_xy_valid_out": {
+        "ports": [
+          "iteration_ctrl_0/xy_valid_out",
+          "data_proc_0/input_valid"
+        ]
+      },
+      "iteration_ctrl_0_en_theta": {
+        "ports": [
+          "iteration_ctrl_0/en_theta",
+          "data_path_0/en_theta_0",
+          "data_path_0/en_theta_1"
+        ]
+      },
+      "iteration_ctrl_0_sel_theta": {
+        "ports": [
+          "iteration_ctrl_0/sel_theta",
+          "data_path_0/sel_theta_0",
+          "data_path_0/sel_theta_1"
+        ]
+      },
+      "data_proc_0_output_valid": {
+        "ports": [
+          "data_proc_0/output_valid",
+          "iteration_ctrl_0/avg_valid_in",
+          "data_path_0/avg_valid_in"
+        ]
+      },
+      "data_proc_0_x_avg": {
+        "ports": [
+          "data_proc_0/x_avg",
+          "data_path_0/x_avg"
+        ]
+      },
+      "data_proc_0_y_avg": {
+        "ports": [
+          "data_proc_0/y_avg",
+          "data_path_0/y_avg"
+        ]
+      },
+      "data_proc_0_x_sqr_avg": {
+        "ports": [
+          "data_proc_0/x_sqr_avg",
+          "data_path_0/x_sqr_avg"
+        ]
+      },
+      "data_proc_0_y_sqr_avg": {
+        "ports": [
+          "data_proc_0/y_sqr_avg",
+          "data_path_0/y_sqr_avg"
+        ]
+      },
+      "data_proc_0_x_mul_y_avg": {
+        "ports": [
+          "data_proc_0/x_mul_y_avg",
+          "data_path_0/x_mul_y_avg"
+        ]
+      },
+      "alpha_temp_0_1": {
+        "ports": [
+          "alpha_temp_0",
+          "data_path_0/alpha_temp"
+        ]
+      },
+      "input_valid_0_1": {
+        "ports": [
+          "input_valid_0",
+          "iteration_ctrl_0/input_valid"
+        ]
+      },
+      "data_path_0_conv_flag_out": {
+        "ports": [
+          "data_path_0/conv_flag_out",
+          "conv_flag_out"
+        ]
+      },
+      "data_path_0_theta_0_out": {
+        "ports": [
+          "data_path_0/theta_0_out",
+          "theta_0_out"
+        ]
+      },
+      "data_path_0_theta_1_out": {
+        "ports": [
+          "data_path_0/theta_1_out",
+          "theta_1_out"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+dsp48_multiplier_2.vhd,vhdl,xil_defaultlib,../../../../linear_regression.srcs/sources_1/ip/dsp48_multiplier_2/sim/dsp48_multiplier_2.vhd,

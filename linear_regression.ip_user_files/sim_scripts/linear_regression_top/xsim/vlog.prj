@@ -1,0 +1,11 @@
+verilog xil_defaultlib  \
+"../../../bd/linear_regression_top/ipshared/8ee5/src/data_proc.v" \
+"../../../bd/linear_regression_top/ip/linear_regression_top_data_proc_0_0/sim/linear_regression_top_data_proc_0_0.v" \
+"../../../bd/linear_regression_top/ipshared/3185/src/data_path.v" \
+"../../../bd/linear_regression_top/ip/linear_regression_top_data_path_0_0/sim/linear_regression_top_data_path_0_0.v" \
+"../../../bd/linear_regression_top/ip/linear_regression_top_iteration_ctrl_0_0/sim/linear_regression_top_iteration_ctrl_0_0.v" \
+"../../../bd/linear_regression_top/sim/linear_regression_top.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
